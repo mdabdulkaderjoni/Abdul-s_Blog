@@ -1,12 +1,11 @@
 import React from 'react';
+import NavigationBar from '../../NavigationBar/NavigationBar';
 
-const Variables = (props) => {
-    const {span} =props.data;
-    console.log(props.data)
-    console.log(span)
+const Variables = () => {
+ 
     return (
         <div>
-            Here is: {span}
+            <NavigationBar></NavigationBar>
         </div>
     );
 };

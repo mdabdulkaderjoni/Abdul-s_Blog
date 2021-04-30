@@ -1,29 +1,51 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import logo from './logo.png';
 
+import './NavigationBar.css'
 const NavigationBar = () => {
     return (
-        <div>
-
-<Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">Abdul's Blog</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav  className="mr-auto" >
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    
-  </Navbar.Collapse>
-</Navbar>
-        </div>
+      <div className='btm-margin'>
+        
+      <Navbar fixed="top" className="nav-style" variant="dark" expand="lg">
+         <Container>
+          <Link className="navbar-brand " to="/"> 
+               <img src={logo} className="logo" alt=""/>
+           </Link>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="collapsed" />
+            <Navbar.Collapse id="basic-navbar-nav">
+               <Nav className="ml-auto">
+                 <Link className="nav-link nav-text" to="/home">
+                     Home
+                  </Link>
+                  <Link className="nav-link nav-text" to="/javascript" s>
+                     Javascript
+                  </Link> 
+                  <Link className="nav-link nav-text" to="/interviewjs" s>
+                     InterviewJS
+                  </Link> 
+                  
+                  <Link className="nav-link nav-text" to="/contact" >
+                     Contact
+                  </Link> 
+                  {/* <button onClick={()=>setLoggedInUser({})}>Sign-Out</button> */}
+                  {/* <Link to="/login">
+                      {
+                         loggedInUser.name?<Button variant="danger" onClick={()=>setLoggedInUser({})}>Sign-Out</Button>:<Button variant="success">Login</Button>
+                      } 
+                  </Link> */}
+                  {/* <Link className="nav-link" to="/user" style={{color:'white'}}>
+                     <h5>{loggedInUser.name}</h5>
+                  </Link> */}
+                  
+               </Nav>
+            </Navbar.Collapse>
+         </Container>
+      </Navbar>
+     
+       
+     </div>
     );
 };
 

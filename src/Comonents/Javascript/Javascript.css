@@ -1,0 +1,28 @@
+.topic-img{
+    width: 280px !important;
+    height: 150px!important;
+    border-radius: 6px;
+  }
+ 
+  .align{
+    text-align: left;
+  }
+  .brd-img{
+    border:4px solid rgb(24, 13, 39);
+  }
+  @media only screen and (min-width: 300px) {
+    .topic-img{
+        width: 100%;
+        height: 100%; 
+      }
+  }
+  @media only screen and (max-width: 575px) {
+    .topic-img{
+      width: 280px !important;
+      height: 150px!important;
+      }
+      .align{
+        text-align: center!important;
+      }
+  }
+  

@@ -1,0 +1,43 @@
+.logo{
+    height:55px;
+    width:350px;
+}
+
+.nav-style{
+    background-color: hsla(0, 100%, 99%, 0.986);
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btm-margin{
+  margin-bottom: 120px;
+}
+.nav-text{
+    margin-left: 80px;
+    font-weight: 500;
+    font-size: 20px;
+    color:rgb(38, 38, 53)!important; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.collapsed{
+    background-color:rgb(78, 74, 100);
+}
+@media only screen and (min-width: 600px) {
+  .nav-text{
+    margin-left: 1em; 
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+      width: 250px;
+    }
+  
+  }
+  @media only screen and (max-width: 370px) {
+    .logo {
+      width: 180px;
+    }
+    
+
+  }
