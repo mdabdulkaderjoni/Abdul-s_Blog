@@ -7,7 +7,7 @@ const Home = () => {
         <div>
             <NavigationBar></NavigationBar>
             <div className="header-div">
-                <img src={header} className="header-img" alt=""/>
+                <img src={header} className="header-img" fluid alt=""/>
             </div>
         </div>
     );
