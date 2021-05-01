@@ -25,6 +25,9 @@ function App() {
             <Route path="/variable">
             <Variables></Variables>
             </Route>
+            <Route path="/">
+            <Home></Home>
+          </Route>
           
         </Switch>
       
